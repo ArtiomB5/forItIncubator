@@ -9,11 +9,15 @@ findMinMaxButton.addEventListener('click', function () {
 
 let summButton = document.getElementById('digitsSumm');
 summButton.addEventListener('click', function () {
+    let digit1Data = document.getElementById('digit1').value;
+    let digit2Data = document.getElementById('digit2').value;
     superSum(digit1Data, digit2Data);
 })
 
 let changeButton = document.getElementById('change');
 changeButton.addEventListener('click', function () {
+    let a = document.getElementById('variable1').value;
+    let b = document.getElementById('variable2').value;
     changeVariables(a, b);
 })
 
@@ -22,8 +26,7 @@ findMaxButton.addEventListener('click', function () {
     findMax(digits);
 })
 
-let digit1Data = document.getElementById('digit1').value;
-let digit2Data = document.getElementById('digit2').value;
+
 
 let John = {
     name: "John",
@@ -72,8 +75,7 @@ function findMinMax(paramArray) {
     alert('max = ' + maxDigit);
 }
 
-let a = document.getElementById('variable1').value;
-let b = document.getElementById('variable2').value;
+
 
 function changeVariables(a, b) {
     let x = a.length;
