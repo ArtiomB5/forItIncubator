@@ -9,7 +9,7 @@ findMinMaxButton.addEventListener('click', function () {
 
 let summButton = document.getElementById('digitsSumm');
 summButton.addEventListener('click', function () {
-    superSum(digit1, digit2);
+    superSum(digit1Data, digit2Data);
 })
 
 let changeButton = document.getElementById('change');
@@ -22,8 +22,8 @@ findMaxButton.addEventListener('click', function () {
     findMax(digits);
 })
 
-let digit1 = document.getElementById('digit1').value;
-let digit2 = document.getElementById('digit2').value;
+let digit1Data = document.getElementById('digit1').value;
+let digit2Data = document.getElementById('digit2').value;
 
 let John = {
     name: "John",
@@ -49,7 +49,7 @@ function inputProcessing() {
     console.log(inputData.toLowerCase());
 
     if (inputData.toLowerCase() === 'google') {
-        setTimeout(() => alert('Yandex круче. Но это не точно.'), 3000);
+        setTimeout(() => alert('Yandex круче. Но это не точно.' + ' Имя первого объекта массива: ' + users[0].name), 3000);
     }
 }
 
